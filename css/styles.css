@@ -159,6 +159,7 @@ svg {
   padding: 188px 0;
   margin: 0 auto;
   text-align: center;
+  max-width: 1440px;
 }
 
 .hero-container {
@@ -335,6 +336,16 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: #404bbf;
+}
+
+.soc-icon {
+  fill: #f4f4fd;
 }
 
 .portfolio {
@@ -392,7 +403,7 @@ svg {
   background: #4d5ae5;
   height: 100%;
   display: flex;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -427,11 +438,16 @@ svg {
 
 .footer-info {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.footer-logo-block {
+  margin-right: 120px;
 }
 
 .footer-soc-title {
   color: #fff;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -459,8 +475,13 @@ svg {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: #31d0aa;
+}
+
+.soc-icon {
+  fill: #f4f4fd;
 }
 
 .basement-logo {
